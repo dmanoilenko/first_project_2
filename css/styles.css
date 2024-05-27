@@ -1,0 +1,106 @@
+ /* палітра кольорів
+   заголовки #212121 
+   текст #757575
+   акцент #2196F3
+   bgc секції #2F303A
+   білий колір тексту та main bgc #FFFFFF
+   bgc секції #F5F4FA
+   footer commynic color color: rgb(255, 255, 255, 60%);
+   */
+:root {
+    --white-color: #FFFFFF;
+    --title-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+}   
+/* Загальні */
+body {
+ background-color: var(--white-color);
+ color: var(--text-color);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.title {
+    color: var(--title-color) ;
+}
+/* хедер */
+.header-logo{
+    color: #000000;
+}
+.header-logo-color,
+.footer-logo-color
+{
+    color: var(--accent-color);
+}
+.header-nav a{
+    color: var(--title-color);
+}
+.header-nav a:hover,
+.header-nav a:focus{
+    color: var(--accent-color);
+}
+.link.current {
+    color: var(--accent-color);  
+}
+.header-communication a {
+    color: var(--text-color);
+}
+.header-communication a:hover,
+.header-communication a:focus {
+    color: var(--accent-color);
+}
+
+/* герой */
+.hero {
+    background-color: #2F303A ;
+}
+.hero-title {
+    color: var(--white-color);
+}
+/*переваги  */
+
+/* робота */
+
+/* команда */
+.team {
+    background-color: #F5F4FA;
+}
+/* футер */
+.footer-logo {
+    color: var(--white-color);
+}
+
+.footer {
+    background-color: #2F303A ;
+}
+.footer address{
+    color: var(--white-color);
+}
+.footer-communication a{
+    color: rgb(255, 255, 255, 60%) ;
+}
+.footer-communication a:hover,
+.footer-communication a:focus{
+    color:var(--accent-color) ;
+}
+.button {
+    color:var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* portfolio */
+.button-primary {
+    color: var(--title-color);
+    background-color: #F5F4FA;
+}
+.button-primary:hover,
+.button-primary:focus,
+.button-primary:active {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+ 
