@@ -91,6 +91,7 @@ button {
     font-weight: 700;
     letter-spacing: 0.6px;
     line-height: 1.88;
+    cursor: pointer;
 }
 /*переваги  */
 .features-header{
@@ -140,6 +141,9 @@ button {
     font-weight: 400;
     line-height: 1.71;
 }
+address {
+    font-style: normal;
+}
 
 
 /* portfolio */
@@ -150,6 +154,7 @@ button {
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.3px;
+    cursor: pointer;
 }
 .button-primary:hover,
 .button-primary:focus,
