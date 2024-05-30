@@ -17,15 +17,30 @@
 body {
  background-color: var(--white-color);
  color: var(--text-color);
+ font-family: "Roboto", sans-serif;
+ font-size: 14px;
 }
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 .title {
     color: var(--title-color) ;
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px ;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+button {
+    font-family: inherit;
 }
 /* хедер */
 .header-logo{
@@ -53,6 +68,10 @@ a{
 .header-communication a:focus {
     color: var(--accent-color);
 }
+.header-nav,
+.header-communication {
+    font-weight: 500;
+}
 
 /* герой */
 .hero {
@@ -60,15 +79,44 @@ a{
 }
 .hero-title {
     color: var(--white-color);
+    font-size: 44px;
+    letter-spacing: 0.6px;
+    font-weight: 900;
+    line-height: 1.36;
+}
+.button {
+    color:var(--white-color);
+    background-color: var(--accent-color);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    line-height: 1.88;
 }
 /*переваги  */
-
+.features-header{
+    font-weight: 700;
+}
+.features-text {
+    font-weight: 400;
+    line-height: 1.71;
+}
 /* робота */
 
 /* команда */
 .team {
     background-color: #F5F4FA;
 }
+.team-item>.title,
+.team-item>p {
+    font-size: 16px;
+}
+.team-item>.title {
+    font-weight: 500;
+}
+.team-item>p {
+    font-weight: 400;
+}
+
 /* футер */
 .footer-logo {
     color: var(--white-color);
@@ -87,15 +135,21 @@ a{
 .footer-communication a:focus{
     color:var(--accent-color) ;
 }
-.button {
-    color:var(--white-color);
-    background-color: var(--accent-color);
+.footer>address,
+.footer-communication {
+    font-weight: 400;
+    line-height: 1.71;
 }
+
 
 /* portfolio */
 .button-primary {
     color: var(--title-color);
     background-color: #F5F4FA;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.3px;
 }
 .button-primary:hover,
 .button-primary:focus,
@@ -103,4 +157,17 @@ a{
     color: var(--white-color);
     background-color: var(--accent-color);
 }
- 
+
+
+.examples-menu .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.6px;
+}
+.examples-menu p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.3px;
+}
