@@ -1,179 +1,217 @@
- /* палітра кольорів
-   заголовки #212121 
-   текст #757575
-   акцент #2196F3
-   bgc секції #2F303A
-   білий колір тексту та main bgc #FFFFFF
-   bgc секції #F5F4FA
-   footer commynic color color: rgb(255, 255, 255, 60%);
-   */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
-    --white-color: #FFFFFF;
-    --title-color: #212121;
-    --text-color: #757575;
-    --accent-color: #2196F3;
-}   
+  --white-color: #ffffff;
+  --title-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+}
 /* Загальні */
 body {
- background-color: var(--white-color);
- color: var(--text-color);
- font-family: "Roboto", sans-serif;
- font-size: 14px;
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .title {
-    color: var(--title-color) ;
+  color: var(--title-color);
 }
 .logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px ;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
 }
 h2 {
-    font-size: 36px;
-    font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
 }
 button {
-    font-family: inherit;
+  font-family: inherit;
+}
+.container {
+  width: 1200px;
+  /* outline: 1px solid red; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 /* хедер */
-.header-logo{
-    color: #000000;
+.header-logo {
+  color: #000000;
 }
 .header-logo-color,
-.footer-logo-color
-{
-    color: var(--accent-color);
+.footer-logo-color {
+  color: var(--accent-color);
 }
-.header-nav a{
-    color: var(--title-color);
+.header-nav a {
+  color: var(--title-color);
 }
 .header-nav a:hover,
-.header-nav a:focus{
-    color: var(--accent-color);
+.header-nav a:focus {
+  color: var(--accent-color);
 }
 .link.current {
-    color: var(--accent-color);  
+  color: var(--accent-color);
 }
 .header-communication a {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 .header-communication a:hover,
 .header-communication a:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .header-nav,
 .header-communication {
-    font-weight: 500;
+  font-weight: 500;
+}
+.header-communication {
+  margin-bottom: 0px;
 }
 
 /* герой */
 .hero {
-    background-color: #2F303A ;
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
-    color: var(--white-color);
-    font-size: 44px;
-    letter-spacing: 0.6px;
-    font-weight: 900;
-    line-height: 1.36;
-    text-align: center;
+  color: var(--white-color);
+  font-size: 44px;
+  letter-spacing: 0.6px;
+  font-weight: 900;
+  line-height: 1.36;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .button {
-    color:var(--white-color);
-    background-color: var(--accent-color);
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    line-height: 1.88;
-    cursor: pointer;
+  border-radius: 4px;
+  border: none;
 }
+.button-primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 1.88;
+  cursor: pointer;
+  width: 216px;
+  padding: 10px 32px;
+}
+
 /*переваги  */
-.features-header{
-    font-weight: 700;
+.features {
+  margin-top: 94px;
+}
+.features-header {
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 .features-text {
-    font-weight: 400;
-    line-height: 1.71;
+  font-weight: 400;
+  line-height: 1.71;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 /* робота */
-
+.work-list {
+  margin-bottom: 0px;
+}
+.work {
+  margin-top: 94px;
+}
 /* команда */
 .team {
-    background-color: #F5F4FA;
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 94px;
 }
-.team-item>.title,
-.team-item>p {
-    font-size: 16px;
+.team-item > .title,
+.team-item > p {
+  font-size: 16px;
 }
-.team-item>.title {
-    font-weight: 500;
+.team-item > .title {
+  font-weight: 500;
 }
-.team-item>p {
-    font-weight: 400;
+.team-item > p {
+  font-weight: 400;
+}
+.team-list {
+  margin-bottom: 0px;
+}
+.team-list p {
+  margin-bottom: 0px;
 }
 
 /* футер */
 .footer-logo {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .footer {
-    background-color: #2F303A ;
+  background-color: #2f303a;
 }
-.footer address{
-    color: var(--white-color);
+.footer address {
+  color: var(--white-color);
 }
-.footer-communication a{
-    color: rgb(255, 255, 255, 60%) ;
+.footer-communication a {
+  color: rgb(255, 255, 255, 60%);
 }
 .footer-communication a:hover,
-.footer-communication a:focus{
-    color:var(--accent-color) ;
+.footer-communication a:focus {
+  color: var(--accent-color);
 }
-.footer>address,
+.footer > address,
 .footer-communication {
-    font-weight: 400;
-    line-height: 1.71;
+  font-weight: 400;
+  line-height: 1.71;
 }
 address {
-    font-style: normal;
+  font-style: normal;
 }
-
 
 /* portfolio */
-.button-primary {
-    color: var(--title-color);
-    background-color: #F5F4FA;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.3px;
-    cursor: pointer;
+.button-secondary {
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.3px;
+  cursor: pointer;
 }
-.button-primary:hover,
-.button-primary:focus,
-.button-primary:active {
-    color: var(--white-color);
-    background-color: var(--accent-color);
+.button-secondary:hover,
+.button-secondary:focus,
+.button-secondary:active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
-
 
 .examples-menu .title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 0.6px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.6px;
 }
 .examples-menu p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.88;
-    letter-spacing: 0.3px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88;
+  letter-spacing: 0.3px;
 }
